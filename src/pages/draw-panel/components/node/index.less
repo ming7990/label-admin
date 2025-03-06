@@ -1,0 +1,70 @@
+.step-box {
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 74px;
+  padding: 8px;
+  border: 0;
+  border-radius: 56px;
+  cursor: pointer;
+
+  .step-header {
+    display: flex;
+    align-items: center;
+
+    .step-title-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 180px;
+    }
+
+    .step-title {
+      font-size: 16px;
+    }
+
+    .step-status {
+      margin-right: 12px;
+    }
+
+    .step-progress {
+      flex-shrink: 0;
+      margin-left: 4px;
+      font-size: 12px;
+    }
+  }
+}
+
+.step-box_doing {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #e3f1fc;
+}
+
+.step-box_finish {
+  color: #fff;
+  background: #1890ff;
+}
+
+.step-box_wait {
+  color: rgba(0, 0, 0, 0.25);
+  background: #f5f5f5;
+}
+
+.tool-box {
+  min-width: 236px;
+  font-size: 14px;
+}
+
+.box_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.step-box_normal {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}

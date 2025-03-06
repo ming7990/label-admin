@@ -1,0 +1,48 @@
+.video-classify {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  padding: 15px 0;
+  .header {
+    padding: 0 15px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ebeef5;
+    .searchClassify {
+      display: flex;
+      margin: 7px 0;
+    }
+  }
+  .tagText {
+    width: 165px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .tagOperation {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+  }
+  .el-icon-edit {
+    &:hover {
+      color: #409eff;
+      cursor: pointer;
+    }
+  }
+  .el-icon-delete {
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
+
+.upload {
+  color: red;
+  :global {
+    .ant-upload-list-item-card-actions {
+      display: none;
+    }
+  }
+}

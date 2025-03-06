@@ -1,0 +1,151 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 363px;
+  height: 176px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding: 20px 16px;
+  // background-color: #000;
+  border: 1px solid #0000000f;
+  border-radius: 4px;
+  &:hover {
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px 0 #00000014, 0 9px 28px 8px #0000000d;
+    cursor: pointer;
+  }
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  // background-color: cyan;
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .top-rightContainer {
+    width: 100%;
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+      // background-color: yellow;
+
+      .task-title {
+        max-width: 210px;
+        overflow: hidden; // 溢出隐藏
+        color: rgba(0, 0, 0, 0.85);
+        color: #000000d9;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: 'PingFang SC';
+        white-space: nowrap; // 强制一行
+        text-overflow: ellipsis; // 文字溢出显示省略号
+      }
+    }
+
+    .process-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8px;
+      // background-color: red;
+      .process-bar {
+        flex: 1;
+      }
+
+      .process-text {
+        margin-left: 8px;
+        color: #000000d9;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: 'PingFang SC';
+        // background-color: #fff;
+      }
+    }
+  }
+}
+
+.bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 16px 0;
+  // background-color: green;
+
+  .counter-info-container {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;
+    height: 46%;
+    padding: 8px 16px;
+    background-color: #f9f9fa;
+    border-radius: 4px;
+    opacity: 1;
+
+    .counter-info-l-text {
+      color: #00000073;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: 'PingFang SC';
+    }
+
+    .counter-info-r-text {
+      color: #000000d9;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: 'PingFang SC';
+    }
+  }
+}
+
+.page-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px;
+  padding: 36px;
+  font-size: 18px;
+
+  .course-pic {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.scrollbar(@width, @color: #f5f5f5) {
+  ::-webkit-scrollbar {
+    width: @width * 4;
+    background: transparent;
+    visibility: visible;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    width: @width * 4;
+    background: @color;
+    border-radius: 30px;
+    visibility: hidden;
+  }
+
+  &:hover {
+    ::-webkit-scrollbar {
+      visibility: visible;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      visibility: visible;
+    }
+  }
+}

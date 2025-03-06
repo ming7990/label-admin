@@ -1,0 +1,86 @@
+.detail-page {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  .title {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.content-detail-box {
+  background-color: #fff;
+  padding: 10px 26px;
+}
+.title-infor {
+  h3 {font-size: 30px;line-height: 32px;margin-bottom: 10px;}
+  .u-infor {
+    color: #00000073;font-size: 14px;margin: 0;line-height: 20px;
+  }
+}
+.text-infor {
+  line-height: 22px;font-size: 14px;padding: 20px 0;
+}
+
+// 视频区
+.audio-box {
+  display: flex;
+  .audio-play {
+    width: 270px;margin-right: 16px;
+    audio {width: 100%;}
+  }
+  .video-play {
+    width: 65%;
+    margin-right: 16px;
+  }
+  .audio-list {
+    flex: 1;width: 0;
+    .file-name {display: block;line-height: 28px;padding-bottom: 4px;}
+    .name {width: 100%;cursor: pointer;}
+    .infor {display: flex;line-height: 22px;}
+  }
+}
+.file-list {
+  background: #f5f5f5;border-radius: 2px;font-size: 14px;line-height: 38px;
+  .tle {
+    color: #000;padding-left: 10px;border-bottom: solid 1px #eee;font-weight: 700;
+  }
+  ul, li, p {margin: 0;padding: 0;}
+  li {
+    padding: 0 10px;margin: 0;
+    display: flex;align-items: center;border-bottom: solid 1px #eee;color: #00000073;
+  }
+  li.playing {
+    .name {
+      padding-left: 18px;
+      background: url('../../../asset/image/play.png') no-repeat 0 center;
+      background-size: 14px;
+      color: #1890FF;
+    }
+  }
+  .name-infor {
+    display: flex;color: #000000d9;
+  }
+  .name {
+    width: 0; // 解决flex:auto元素内容超出显示省略号设置无效
+    overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+  }
+  .size {margin: 0 15px;}
+  .btn {cursor: pointer;}
+}
+
+.share-list {
+  padding: 0 100px 0 120px;
+  .li {
+    display: flex;
+    margin-bottom: 4px;
+  }
+  .file {
+    flex: 1;
+  }
+}

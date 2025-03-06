@@ -1,0 +1,161 @@
+.commonTabsSty {
+  :global {
+    .ant-pro-page-container-children-content {
+      padding: 0 24px 0;
+      background-color: #fff;
+    }
+  }
+}
+
+.commonTips {
+  display: block;
+  margin-bottom: 24px;
+  padding-left: 30px;
+  color: #00000073;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'PingFang SC';
+}
+
+.commonFormSty {
+  :global {
+    .ant-form-item-label {
+      min-width: 150px;
+    }
+  }
+}
+
+.tagsSty {
+  :global {
+    .site-tag-plus {
+      background: #fff;
+      border-style: dashed;
+    }
+    .edit-tag {
+      user-select: none;
+    }
+    .tag-input {
+      width: 100px;
+      margin-top: 5px;
+      margin-right: 8px;
+      vertical-align: top;
+    }
+  }
+}
+
+.slotBox {
+  display: flex;
+  align-content: flex-start;
+  margin-bottom: 24px;
+}
+.slotTxt {
+  display: inline-block;
+  // width: 80px;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+.slotList {
+  display: inline-block;
+  width: 640px;
+  max-height: 400px;
+  padding-left: 10px;
+  overflow-y: auto;
+  text-align: left;
+  span {
+    // display: inline-block;
+    margin: 5px;
+    // padding: 5px 10px;
+    // background: rgba(240, 242, 245, 1);
+    // border-radius: 99999px;
+    // cursor: pointer;
+  }
+}
+.exceteBox {
+  :global {
+    .ant-form-item {
+      padding-left: 30px;
+    }
+  }
+}
+
+.formListBox {
+  position: relative;
+  :global {
+    .ant-form-item-label {
+      opacity: 0;
+    }
+  }
+}
+
+.detail-page {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  .title {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// 知识查看;
+.knowledge-detail {
+  display: flex;
+  align-items: flex-start; // 创建两个高度不相等的并排列
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  .directory-box {
+    width: 316px;
+    padding: 20px 20px 0 20px;
+    overflow-x: auto;
+  }
+  .toggle-btn {
+    margin-bottom: 10px;cursor: pointer;display: inline-block;
+  }
+  .toggleBtnHide {
+    width: 30px;
+    overflow: hidden;
+    .tree-content {display: none;}
+  }
+  .tree-content {
+
+  }
+  .detail-box {flex: 1;border-left: solid 1px #eee;}
+  .not-selected {
+    text-align: center;padding: 70px 0;
+    h2 {
+      color: #000000d9;
+      font-size: 38px;
+      line-height: 50px;
+      margin-bottom: 36px;
+    }
+  }
+  .knowledge-box {
+    padding: 28px;
+  }
+}
+.rightside-box {
+  background-color: #fff;padding: 10px 26px;
+}
+
+// 添加知识;
+.addboxForm {
+  display: flex;
+  .formLabel {
+    line-height: 32px;
+  }
+  .formRow {
+    flex: 1;
+  }
+}
+.tree-content {
+  min-height: 500px;
+}
+.direTreeNode {
+  font-size: 12px;
+}

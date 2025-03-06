@@ -1,0 +1,159 @@
+.title-infor {
+  h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .u-infor {
+    margin: 0;
+    color: #00000073;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.text-infor {
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.resource-box {
+}
+.pic-list {
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.pic-box {
+  float: left;
+  width: 32%;
+  margin-bottom: 12px;
+  margin-left: 2%;
+  &:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+  .img-padding {
+    position: relative;
+    padding-top: 56%;
+    border-radius: 2px;
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+      border-radius: 2px;
+    }
+  }
+  .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+.file-list {
+  font-size: 14px;
+  line-height: 38px;
+  background: #f5f5f5;
+  border-radius: 2px;
+  .tle {
+    padding-left: 10px;
+    color: #000;
+    font-weight: 700;
+    border-bottom: solid 1px #eee;
+  }
+  ul,
+  li,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 10px;
+    color: #00000073;
+    border-bottom: solid 1px #eee;
+  }
+  li.playing {
+    .name {
+      padding-left: 18px;
+      color: #1890ff;
+      background: url('../../../asset/image/play.png') no-repeat 0 center;
+      background-size: 14px;
+    }
+  }
+  .name {
+    display: block;
+    flex: 1;
+    width: 0; // 解决flex:auto元素内容超出显示省略号设置无效color: #000000d9;
+  }
+  .name p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .size {
+    margin: 0 15px;
+  }
+  .btn {
+    cursor: pointer;
+  }
+}
+.audio-box {
+  display: flex;
+  .audio-play {
+    width: 270px;
+    margin-right: 16px;
+    audio {
+      width: 100%;
+    }
+  }
+  .video-play {
+    width: 65%;
+    margin-right: 16px;
+  }
+  .audio-list {
+    flex: 1;
+    width: 0;
+    .file-name {
+      display: block;
+      padding-bottom: 4px;
+      line-height: 28px;
+    }
+    .name {
+      width: 100%;
+      cursor: pointer;
+    }
+    .infor {
+      display: flex;
+      line-height: 22px;
+    }
+  }
+}
+.like-box {
+  margin-top: 20px;
+  color: #00000073;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  .like-btn {
+    width: 48px;
+    height: 48px;
+    margin: auto auto 10px;
+    line-height: 48px;
+    border: 1px solid #1890ff;
+    border-radius: 50%;
+    cursor: pointer;
+    .icon {
+      color: #1890ff;
+      font-size: 22px;
+    }
+  }
+  .like-btn.liked {
+    background: #1890ff;
+    .icon {
+      color: #fff;
+    }
+  }
+}

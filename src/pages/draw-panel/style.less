@@ -1,0 +1,68 @@
+.draw-box_bg {
+  height: 100%;
+  padding-bottom: 12px;
+  overflow: hidden;
+}
+
+.draw-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 64px;
+  padding: 0 18px;
+  background-color: #fff;
+  border-bottom: 2px solid rgba(31, 35, 41, 0.05);
+  box-shadow: 0 2px 4px rgba(31, 35, 41, 0.12);
+}
+
+.content_left {
+  display: flex;
+  flex: 1;
+}
+
+.content_right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bt-item {
+  margin-right: 16px;
+}
+
+:global {
+  .lf-control {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+.mini-box_bg {
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+
+  .mini-box {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+  }
+
+  :global {
+    .lf-control {
+      top: 48px;
+    }
+  }
+}
+
+.icon_sm {
+  border-radius: 50%;
+}

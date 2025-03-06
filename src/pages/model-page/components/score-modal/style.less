@@ -1,0 +1,46 @@
+.model-bg {
+  width: 870px;
+  min-height: 400px;
+  .scrollbar(1.5px, #D9D9D9);
+}
+
+.zy-row {
+  display: flex;
+}
+
+.pie-box {
+  width: 545px;
+  height: 360px;
+}
+
+.score-box {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scrollbar(@width, @color: #f5f5f5) {
+  ::-webkit-scrollbar {
+    width: @width * 4;
+    background: transparent;
+    visibility: hidden;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    width: @width * 4;
+    background: @color;
+    border-radius: 30px;
+    visibility: hidden;
+  }
+
+  &:hover {
+    ::-webkit-scrollbar {
+      visibility: visible;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      visibility: visible;
+    }
+  }
+}

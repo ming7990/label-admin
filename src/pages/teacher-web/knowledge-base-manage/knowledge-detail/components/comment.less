@@ -1,0 +1,88 @@
+// 评论less;
+.comment-detail-box {
+  padding: 16px 0;
+}
+.publish-area {
+  display: flex;
+  .input-area {flex: 1;}
+  .p-btn {
+    width: 64px;height: 54px;background: #1890ff;color: #fff;margin-left: 10px;
+  }
+}
+.comment-show-box {padding-top: 10px;}
+// 评论条;
+.comment-item {
+  font-size: 14px;padding-left: 48px;margin-bottom: 12px;position: relative;
+  .comment-item-content {
+    border-bottom: solid 1px #eee;padding-bottom: 15px;
+  }
+  &:last-child {
+    .comment-item-content{
+      border-bottom: none;
+    }
+  }
+  .userimg {
+    position: absolute;width: 40px;height: 40px;border-radius: 50%;top: 0;left: 0;
+  }
+  .username, .infor-opt {color: #00000073;}
+  .username {line-height: 18px;margin-bottom: 8px;}
+  .content {line-height: 22px;}
+  .infor-opt {
+    margin: 8px 0;
+    span.likeBtn, span.msgBtn, span.delBtn, span.topBtn {margin-left: 12px;cursor: pointer;}
+    .delBtn, .delIcon {color: #FF4D4F;}
+    .topedBtn, .topedBtn .topIcon, .likeBtn.liked, .likeBtn.liked .likeIcon {color: #1890FF;}
+  }
+  .topTag {
+    display: none;
+    width: 64px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 2px;
+    border: 1px solid #ffa39e;
+    background: #fff1f0;
+    color: #f5222d;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .reply-box {
+    background: #fafafa;border-radius: 2px;padding: 12px;
+    /* 滚动条轨道 */
+    ::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.015); /* 设置轨道背景颜色 */
+      border-radius: 3px;
+    }
+    /* 滚动条滑块 */
+    ::-webkit-scrollbar-thumb {
+      background-color: #d9d9d9; /* 设置滑块背景颜色 */
+      border-radius: 3px; /* 设置滑块的圆角 */
+    }
+    /* 滚动条边框 */
+    ::-webkit-scrollbar {
+      width: 6px; /* 设置滚动条宽度 */
+    }
+    &.two {
+      .reply-item {
+        display: none;
+      }
+      .reply-item:first-child, .reply-item:nth-child(2) {
+        display: block;
+      }
+    }
+    .reply-scroll {
+      max-height: 400px;overflow: auto;margin-bottom: 5px;
+    }
+    .reply-item {
+      border-bottom: solid 1px #eee;padding: 4px 0;margin-bottom: 6px;
+      &:last-child {
+        border-bottom: none;margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.moreBtn {
+  display: block;text-align: center;
+}
